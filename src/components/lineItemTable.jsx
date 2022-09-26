@@ -1,23 +1,22 @@
 /* eslint-disable no-restricted-globals */
-import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import * as React from "react";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
 
-import { prodData } from '../data/productData.js';
-import DropDown from './DropDown.jsx';
+import { prodData } from "../data/productData.js";
+import DropDown from "./DropDown.jsx";
 
 function Row(props) {
   const { row } = props;
 
-  
   return (
     <React.Fragment>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>    
+      <TableRow sx={{ "& > *": { borderBottom: "unset" } }}>
         <TableCell component="th" scope="row">
           {row.id}
         </TableCell>
@@ -26,7 +25,7 @@ function Row(props) {
         <TableCell align="right">{row.unit}</TableCell>
         <TableCell align="right">{row.name}</TableCell>
         <TableCell align="right">
-            <DropDown row={row}/>
+          <DropDown row={row} />
         </TableCell>
       </TableRow>
     </React.Fragment>
@@ -36,9 +35,8 @@ function Row(props) {
 const rows = prodData;
 
 export default function LineItemTable() {
-    // console.log((prodData))
-    React.useEffect(() => {
-    },[])
+  // console.log((prodData))
+  React.useEffect(() => {}, []);
   return (
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table">
