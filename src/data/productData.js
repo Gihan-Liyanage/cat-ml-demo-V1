@@ -1,126 +1,230 @@
 const prodData = [
-    {
-        "id": 4,
-        "computed_key": "SE556732-1707-271622210",
-        "name": "PRIMO akvarell vattenfärger Dia. 30 mm. 12 st.",
-        "SIC": "",
-        "description": "",
-        "product_number": "111122334",
-        "unit": "-",
-        "sender_name": "Qvalia Group AB",
-        "sender_id": "SE556732-1707",
-        "category": null,
-        "nace": "",
-        "sent_at": "2022-02-25T11:33:00.979Z",
-        "invoice_id": 1756,
-        "created_at": "2022-02-25T11:33:06.076Z",
-        "updated_at": "2022-02-25T11:33:06.076Z",
-        "duplicates": "3",
-        "receivers": [
-            {
-                "id": "SE556009-4178",
-                "name": "AB Electrolux"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "computed_key": "SE556732-17079008",
-        "name": "NABBI rörpärlor, midi 6000 st. Ålder 5+. Mörk pink",
-        "SIC": "",
-        "description": "",
-        "product_number": "111122334",
-        "unit": "-",
-        "sender_name": "Qvalia Group AB",
-        "sender_id": "SE556732-1707",
-        "category": null,
-        "nace": "",
-        "sent_at": "2022-07-26T07:32:50.738Z",
-        "invoice_id": 2122,
-        "created_at": "2022-07-26T07:32:56.074Z",
-        "updated_at": "2022-07-26T07:32:56.074Z",
-        "duplicates": "1",
-        "receivers": [
-            {
-                "id": "SE556009-4178",
-                "name": "AB Electrolux"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "computed_key": "SE556732-1707910920",
-        "name": "Lenovo ThinkPad USB-C Dock Gen 2 -",
-        "SIC": "Computer Programming Services",
-        "description": "",
-        "product_number": "111122334",
-        "unit": "-",
-        "sender_name": "Sogeti Sverige AB",
-        "sender_id": "SE556732-1707",
-        "category": null,
-        "nace": "",
-        "sent_at": "2022-03-02T04:31:19.060Z",
-        "invoice_id": 1777,
-        "created_at": "2022-03-02T04:31:24.156Z",
-        "updated_at": "2022-03-02T04:31:24.156Z",
-        "duplicates": "4",
-        "receivers": [
-            {
-                "id": "SE556009-4178",
-                "name": "AB Electrolux"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "computed_key": "SE556732-1707",
-        "name": "Kon, h√∂jd: 750 mm, r√∂d/vit",
-        "SIC": "Furniture",
-        "description": "",
-        "product_number": "111122334",
-        "unit": "-",
-        "sender_name": "AJ Produkter AB",
-        "sender_id": "SE556732-1707",
-        "category": null,
-        "nace": "",
-        "sent_at": "2021-12-18T17:36:44.625Z",
-        "invoice_id": 1588,
-        "created_at": "2021-12-18T17:36:49.819Z",
-        "updated_at": "2021-12-18T17:36:49.819Z",
-        "duplicates": "2",
-        "receivers": [
-            {
-                "id": "SE556009-4178",
-                "name": "AB Electrolux"
-            }
-        ]
-    },
-    {
-        "id": 1,
-        "computed_key": "SE556732-1707111122334",
-        "name": "4st Specialpall",
-        "SIC": "Plumbing and Heating Equipment and Supplies (Hydronics)",
-        "description": "",
-        "product_number": "111122334",
-        "unit": "-",
-        "sender_name": "DAHL SVERIGE AB",
-        "sender_id": "SE556732-1707",
-        "category": null,
-        "nace": "",
-        "sent_at": "2022-07-26T09:51:47.332Z",
-        "invoice_id": 2125,
-        "created_at": "2022-07-26T09:51:48.544Z",
-        "updated_at": "2022-07-26T09:51:48.544Z",
-        "duplicates": "2",
-        "receivers": [
-            {
-                "id": "SE556009-4178",
-                "name": "AB Electrolux"
-            }
-        ]
-    }
-]
+  {
+    id: 4,
+    computed_key: "SE556732-1707-271622210",
+    name: "PRIMO akvarell vattenfärger Dia. 30 mm. 12 st.",
+    SIC: "",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    unit: "-",
+    sender_name: "Qvalia Group AB",
+    sender_id: "SE556732-1707",
+    category: null,
+    nace: "",
+    sent_at: "2022-02-25T11:33:00.979Z",
+    created_at: "2022-02-25T11:33:06.076Z",
+    updated_at: "2022-02-25T11:33:06.076Z",
+    duplicates: "3",
+    receivers: [
+      {
+        id: "SE556009-4178",
+        name: "AB Electrolux",
+      },
+    ],
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    computed_key: "SE556732-17079008",
+    name: "NABBI rörpärlor, midi 6000 st. Ålder 5+. Mörk pink",
+    SIC: "",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    unit: "-",
+    sender_name: "Qvalia Group AB",
+    sender_id: "SE556732-1707",
+    category: null,
+    nace: "",
+    sent_at: "2022-07-26T07:32:50.738Z",
+    invoice_id: 2122,
+    created_at: "2022-07-26T07:32:56.074Z",
+    updated_at: "2022-07-26T07:32:56.074Z",
+    duplicates: "1",
+    receivers: [
+      {
+        id: "SE556009-4178",
+        name: "AB Electrolux",
+      },
+    ],
+  },
+  {
+    id: 3,
+    computed_key: "SE556732-1707910920",
+    name: "Lenovo ThinkPad USB-C Dock Gen 2 -",
+    SIC: "Computer Programming Services",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    unit: "-",
+    sender_name: "Sogeti Sverige AB",
+    sender_id: "SE556732-1707",
+    category: null,
+    nace: "",
+    sent_at: "2022-03-02T04:31:19.060Z",
+    created_at: "2022-03-02T04:31:24.156Z",
+    updated_at: "2022-03-02T04:31:24.156Z",
+    duplicates: "4",
+    receivers: [
+      {
+        id: "SE556009-4178",
+        name: "AB Electrolux",
+      },
+    ],
+  },
+  {
+    id: 2,
+    computed_key: "SE556732-1707",
+    name: "Kon, h√∂jd: 750 mm, r√∂d/vit",
+    SIC: "Furniture",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    unit: "-",
+    sender_name: "AJ Produkter AB",
+    sender_id: "SE556732-1707",
+    category: null,
+    nace: "",
+    sent_at: "2021-12-18T17:36:44.625Z",
+    created_at: "2021-12-18T17:36:49.819Z",
+    updated_at: "2021-12-18T17:36:49.819Z",
+    duplicates: "2",
+    receivers: [
+      {
+        id: "SE556009-4178",
+        name: "AB Electrolux",
+      },
+    ],
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    computed_key: "SE556732-1707111122334",
+    name: "4st Specialpall",
+    SIC: "Plumbing and Heating Equipment and Supplies (Hydronics)",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    unit: "-",
+    sender_name: "DAHL SVERIGE AB",
+    sender_id: "SE556732-1707",
+    category: null,
+    nace: "",
+    sent_at: "2022-07-26T09:51:47.332Z",
+    invoice_id: 2125,
+    created_at: "2022-07-26T09:51:48.544Z",
+    updated_at: "2022-07-26T09:51:48.544Z",
+    duplicates: "2",
+    receivers: [
+      {
+        id: "SE556009-4178",
+        name: "AB Electrolux",
+      },
+    ],
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name: "TEAMSPORT - Träningsset",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    description: "",
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+
+  {
+    id: Math.round(Math.random() * 10),
+    name:
+      "SanDisk Extreme SDSQXA1-512G-GN6MA microSDXC-minneskort med Adapter, Röd, Guld, 512 GB",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name:
+      "Philips 55oled706 4k uhd oled android tv, 55 tums 4k smart-tv med ambilight, levande hdr-bild, filmiskt dolby vision- och atmos-ljud, kompatibel med google assistance + alexa, ram med metallinfattning",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name: "Oral-B Precision Clean Tandborsthuvuden, Vit, Paket med 10",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name:
+      "OtterBox Slim Series skal för iPhone 12 mini med MagSafe, stöttåligt, fallsäkert, supertunt, skyddande skal, testad till militärstandard x3, Blå/Grå",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name: "JACK & JONES herr JJITOM JJORIGINAL AM 815 STS tajta jeans",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name: " Braisogona M530004 tryckkokare, rostfritt stål, silver, 10 ",
+    description:
+      "Om denna artikel Kapacitet 10 liter, diameter 24 cm Handtag och vred: Termobeständig bakelit Tillverkad i 18/10 rostfritt stål Handtag och vred: Termobeständig bakelit Tillverkad i 18/10 rostfritt stål",
+    SIC: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name: "Tapela E9 Bluetooth Headphones",
+    description:
+      "Active Noise Cancelling Headphones Deep Bass Wireless Comfortable Memory Foam Ear Cups for Sports/TV/Work (Black)",
+    SIC: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name: " Scotch Duct Tape, Jet Black, 1.88-Inch by 20-Yard - 920-BLK-C",
+    description: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    SIC: "",
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name:
+      "Caliart Acrylic Paint Set With 12 Brushes, 24 Colors (59ml, 2oz) Art Craft Paints for Artists Kids Students Beginners & Painters, Canvas Halloween Pumpkin Ceramic Wood Rock Painting Art Supplies Kit",
+    description: "",
+    SIC: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    sender_name: "-",
+    unit: "-",
+  },
+  {
+    id: Math.round(Math.random() * 10),
+    name:
+      "Paper Mate Flair Felt Tip Pens | Medium Point 0.7 Millimeter Marker Pens | School Supplies for Teachers & Students | Assorted Fashion Colors, 12 Count",
+    description: "",
+    SIC: "",
+    product_number: (Math.random() * 1000000).toString().substring(0,6),
+    sender_name: "-",
+    unit: "-",
+  },
+];
 
 module.exports = {
-    prodData
-}
+  prodData,
+};
